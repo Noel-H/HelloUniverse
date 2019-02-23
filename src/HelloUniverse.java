@@ -96,6 +96,24 @@ public class HelloUniverse {
 
         System.out.println("Le nombre de planete découverte actuelle est de " + Planete.nbPlanetesDecouvertes);
 
+        VaisseauDeGuerre ship = new VaisseauDeGuerre();
+        ship.type = "Chasseur";
+        ship.blindage = 156;
+        ship.resistanceDuBouclier = 2;
 
+        VaisseauCivil ship2 = new VaisseauCivil();
+        ship2.type = "Vaisseau-Monde";
+        ship2.blindage = 4784;
+        ship2.resistanceDuBouclier = 30;
+
+        ship.activerBouclier();
+        ship2.activerBouclier();
+
+        ship.attaque(ship2, "lasers photoniques", 3);
+
+        ship2.desactiverBouclier();
+
+        System.out.println("La durée de protection résiduelle du bouclier du " + ship2.type + " est de " + ship2.resistanceDuBouclier);
+        System.out.println("La valeur du blindage du " + ship2.type + " est de " + ship2.blindage);
     }
 }
