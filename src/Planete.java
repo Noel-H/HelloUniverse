@@ -4,11 +4,12 @@ public class Planete {
     static int nbPlanetesDecouvertes;
 
     String nom;
-    String matiere;
     long diametre;
     int totalVisiteurs;
     Atmosphere atmosphere;
     Vaisseau vaisseauStock;
+
+
 
     Planete(String nom) {
         nbPlanetesDecouvertes++;

@@ -1,6 +1,6 @@
 public class HelloUniverse {
     public static void main(String... args) {
-        Planete mercure = new Planete("Mercure");
+        Planete mercure = new PlaneteTellurique("Mercure");
         mercure.matiere = "telluriques";
         mercure.diametre = 4880L;
 
