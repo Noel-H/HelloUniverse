@@ -1,3 +1,4 @@
-public class VaisseauCivil extends Vaisseau {
+
+public class VaisseauCivil extends Vaisseau{
 
 }
