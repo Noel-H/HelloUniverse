@@ -2,7 +2,9 @@
 public class Planete {
     String nom;
     int diametre;
+
     Atmosphere atmosphere;
+
     static String forme="Sphérique";
     static int nbPlanetesDecouvertes;
 
