@@ -2,10 +2,7 @@
 public class Planete {
     String nom;
     int diametre;
-    String matiere;
-    int totalVisiteurs;
     Atmosphere atmosphere;
-    Vaisseau vaisseauAccoste;
     static String forme="Sphérique";
     static int nbPlanetesDecouvertes;
 
@@ -24,17 +21,7 @@ public class Planete {
         return degres/360;
     }
 
-    Vaisseau accueillirVaisseau(Vaisseau nouveauVaisseau){
 
-        totalVisiteurs+=nouveauVaisseau.nbPassagers;
-
-        Vaisseau vaisseauPrecedent=vaisseauAccoste;
-
-        vaisseauAccoste=nouveauVaisseau;
-
-        return vaisseauPrecedent;
-
-    }
 
     static String expansion (double milliardsDAnneesLumiere){
         if (milliardsDAnneesLumiere < 14){
