@@ -1,10 +1,9 @@
-
 public class VaisseauDeGuerre extends Vaisseau {
 
     boolean armesDesactivees;
 
-    void attaque(Vaisseau vaisseauCible, String arme, int duree){
-        if (armesDesactivees){
+    void attaque(Vaisseau vaisseauCible, String arme, int duree) {
+        if (armesDesactivees) {
             System.out.println("Attaque impossible, l'armement est désactivé");
         } else {
             System.out.println("Un vaisseau de type " + type + " attaque un vaisseau de type " + vaisseauCible.type + " en utilisant l'arme " + arme + " pendant " + duree + " minutes.");
@@ -13,8 +12,13 @@ public class VaisseauDeGuerre extends Vaisseau {
         }
     }
 
-    void desactiverArmes(){
+    void desactiverArmes() {
+        System.out.println("Désactivation des armes d'un vaisseau de type " + type);
         armesDesactivees = true;
-        System.out.println("Désactivation des armes d'un vaisseau de type "+type);
+    }
+
+    void activerBouclier(){
+        System.out.println("Activation du bouclier d'un vaisseau de type "+type+".");
+        desactiverArmes();
     }
 }
